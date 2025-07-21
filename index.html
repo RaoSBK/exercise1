@@ -120,7 +120,7 @@
     </div>
 
 
-    <div id="application">
+    <div id="application" action="https://formspree.io/f/{form_id}" method="post" enctype="multipart/form-group">
         <h2>Submit Your Application Form</h2>
         <form id="application-form">
             <div class="form-group">
@@ -159,13 +159,17 @@
             </div>
             <div class="form-group">
                 <label for="coverletter">Cover Letter</label><br>
-                <textarea name="coverletter" id="coverletter" rows="5" required placeholder="Explain what makes you suitable for the job..."></textarea>
+                <textarea name="coverletter" id="coverletter" rows="5" required
+                    placeholder="Explain what makes you suitable for the job..."></textarea>
             </div>
             <div class="form-group">
                 <label for="terms">
                     <input type="checkbox" id="terms" name="terms" required>
                     I agree to the term and conditions
                 </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit Application">
             </div>
         </form>
     </div>

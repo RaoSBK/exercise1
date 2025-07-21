@@ -65,8 +65,7 @@ a {
     color: #4F0E0E;
 }
 
-a:hover,
-a:focus {
+a:hover, a:focus {
     color: #fb2c36;
 }
 
@@ -140,27 +139,49 @@ h3 {
     margin: 0 auto;
     padding: 0 8px;
 }
+
 #application-form {
     font-weight: 600;
 }
+
 #application-form div {
     margin-top: 10px;
 }
+
 #application-form input, select, text {
     padding: 4px;
     font-size: 1.25rem;
     margin-top: 4px;
 }
+
 .form-group textarea {
     width: 80%;
     font-family: EB+Garamond;
     font-size: 20px;
 }
+
+.form-group input[type="checkbox"] {
+    width: 16px;
+    font-family: 'EB+Garamond', sans-serif;
+}
+
+.form-group input[type="submit"] {
+    background: #edb0b0;
+    border: 0px;
+    color: #4F0E0E;
+    font-weight: 600;
+}
+/* .form-group input [type="submit"] :hover {
+    color: #0c0a0a;
+}  */
+
 #footer {
     background: rgb(195, 186, 186);
     padding: 8px;
     margin-top: 32px;
     text-align: center;
+    color: #4F0E0E;
+    font-weight: 500;
 }
 
 #footer-links {
