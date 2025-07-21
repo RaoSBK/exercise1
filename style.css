@@ -146,12 +146,16 @@ h3 {
 #application-form div {
     margin-top: 10px;
 }
-#application-form input, select {
+#application-form input, select, text {
     padding: 4px;
     font-size: 1.25rem;
     margin-top: 4px;
 }
-
+.form-group textarea {
+    width: 80%;
+    font-family: EB+Garamond;
+    font-size: 20px;
+}
 #footer {
     background: rgb(195, 186, 186);
     padding: 8px;
