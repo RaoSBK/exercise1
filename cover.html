@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Cover Photo for Suraj Bhan Kumar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Chosen Palette: "Futuristic Teal & Charcoal" -->
+    <!-- Application Structure Plan: The application is designed as a static visual generator for a LinkedIn cover photo. The structure is a single, fixed-aspect-ratio container (1584x396px, the standard for LinkedIn) that mimics the final look. The layout is intentionally asymmetrical, placing all key information on the right side. This is a strategic choice based on LinkedIn's UI, where the user's profile picture covers a significant portion of the left-center area on both desktop and mobile views. This design ensures no critical information is ever obscured. The user's "interaction" is to screenshot this visual to use as their cover photo. -->
+    <!-- Visualization & Content Choices: Report Info: Suraj Bhan Kumar, CSE Student in AI/ML. Goal: Create a professional, clickable banner. Viz/Presentation: Used structured HTML/Tailwind to create a graphic. A dark, gradient background with abstract dot patterns suggests technology and data. Text is the primary information layer. Goal: Inform & Brand. Method: Hierarchical text (Name > Specialization > Skills/Contact). Interaction: Visual clarity for screenshotting. Justification: This format directly communicates value, is aesthetically pleasing for the tech sector, and avoids the profile picture obstruction problem, making it highly effective. Library/Method: HTML/Tailwind. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .linkedin-banner {
+            width: 100%;
+            max-width: 1584px;
+            height: 396px;
+            background: radial-gradient(ellipse at top left, #1a202c, #0d1117);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .dot-pattern {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.1) 1px, transparent 0);
+            background-size: 20px 20px;
+            opacity: 0.5;
+        }
+
+        .glow-effect {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            left: -150px;
+            top: -150px;
+            background: radial-gradient(circle, rgba(0, 255, 255, 0.1), transparent 70%);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-200 flex flex-col items-center justify-center min-h-screen p-4">
+
+    <div class="w-full max-w-5xl mb-4">
+        <h1 class="text-2xl font-bold text-gray-800 text-center">Your LinkedIn Cover Photo</h1>
+        <p class="text-center text-gray-600 mt-2">Right-click and 'Save image as...' or take a screenshot of the banner
+            below to use on your profile.</p>
+    </div>
+
+    <div class="linkedin-banner flex items-center justify-end text-white shadow-2xl">
+        <div class="dot-pattern"></div>
+        <div class="glow-effect"></div>
+
+        <div class="z-10 w-1/2 p-8 mr-8">
+            <h1 class="text-5xl font-bold text-white">Suraj Bhan Kumar</h1>
+            <p class="mt-2 text-2xl text-teal-300">Computer Science & Engineering | AI & Machine Learning</p>
+
+            <div class="mt-6 border-t border-teal-500/50 pt-4 flex flex-col space-y-3 text-lg">
+                <div class="flex items-center space-x-3">
+                    <span class="text-teal-400 font-semibold w-28">Skills:</span>
+                    <span class="text-gray-300">Python,c</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <span class="text-teal-400 font-semibold w-28">Portfolio:</span>
+                    <span class="text-gray-300 hover:text-white transition-colors">https://github.com/RaoSBK</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <span class="text-teal-400 font-semibold w-28">Contact:</span>
+                    <span class="text-gray-300 hover:text-white transition-colors">surajbhan20005@gmail.com</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
