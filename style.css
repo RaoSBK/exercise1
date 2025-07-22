@@ -170,6 +170,7 @@ h3 {
     border: 0px;
     color: #4F0E0E;
     font-weight: 600;
+    cursor: pointer;
 }
 /* .form-group input [type="submit"] :hover {
     color: #0c0a0a;
