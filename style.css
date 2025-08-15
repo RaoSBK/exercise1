@@ -8,6 +8,33 @@ body {
     color: #444444;
 }
 
+/* For Phones (Portrait & Small Screens) */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+    /* Add your mobile styles here */
+}
+
+/* For Tablets */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+        padding: 15px;
+    }
+    /* Add your tablet styles here */
+}
+
+/* For Laptops / Desktops */
+@media only screen and (min-width: 1025px) {
+    body {
+        font-size: 18px;
+        padding: 20px;
+    }
+    /* Add your desktop styles here */
+}
+
 h1 {
     font-size: 3rem;
 }
